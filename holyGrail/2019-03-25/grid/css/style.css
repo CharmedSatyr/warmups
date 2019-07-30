@@ -1,0 +1,36 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "left main main right"
+    "footer footer footer footer";
+}
+.item-a {
+  border: 1px solid black;
+  grid-area: header;
+  background: green;
+}
+.item-b {
+    border: 1px solid black;
+  grid-area: main;
+  background: blue;
+}
+.item-c {
+    border: 1px solid black;
+  grid-area: right;
+  background: violet;
+}
+.item-d {
+    border: 1px solid black;
+  grid-area: footer;
+  background: pink;
+}

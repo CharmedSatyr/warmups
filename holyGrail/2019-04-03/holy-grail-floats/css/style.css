@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header,
+footer {
+  background: #666;
+  height: 70px;
+  line-height: 70px;
+}
+
+main {
+  background: #eee;
+  height: calc(100% - 140px);
+}
+
+main > content {
+  background: #eee;
+}
+
+main > nav {
+  background: #21f;
+  float: left;
+}
+
+main > aside {
+  background: #fd1;
+  float: right;
+}
+
+main > nav, main > aside {
+  height: 100%;
+  width: 200px;
+}

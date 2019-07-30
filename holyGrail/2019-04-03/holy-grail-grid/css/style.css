@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+header, footer {
+  background-color: #1cd;
+  height: 70px;
+  line-height: 70px;
+}
+
+main {
+  background: #fafafa;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: calc(100% - calc(2 * 70px));
+}
+
+main > nav {
+  background-color: #ccc;
+  order: 1;
+}
+
+main > aside {
+  background-color: #aaa;
+  order: 3;
+}
+
+main > .content {
+  background-color: #ddd;
+  order: 2;
+}

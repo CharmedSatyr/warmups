@@ -1,0 +1,63 @@
+:root {
+  --header-footer-height: 70px;
+  --left-right-width: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header, footer {
+  height: var(--header-footer-height);
+  height: 70px;
+  width: 100%;
+}
+
+header {
+  background-color: yellow;
+}
+
+footer {
+  background-color: orange;
+}
+
+main {
+  background: limegreen;
+  height: 100%;
+  height: calc(100% - 140px);
+  width: 100%;
+}
+
+main > nav {
+  background: red;
+  float: left;
+  height: 100%;
+}
+
+main > article {
+  background: lightblue;
+  height: 100%;
+  margin-left:  var(--left-right-width);
+  width: calc(100% - 2 * var(--left-right-width));
+}
+
+main > aside {
+  background: purple;
+  float: right;
+  height: calc(100% - 2 * var(--header-footer-height));
+  position: absolute;
+  right: 0;
+  top: var(--header-footer-height);
+}
+
+main > nav, main > aside {
+  width: var(--left-right-width);
+}
